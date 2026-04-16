@@ -20,7 +20,8 @@ COPY --from=librealsense /opt/librealsense /usr/local/
 COPY --from=librealsense /usr/local/lib/python3.12/dist-packages/pyrealsense2 /usr/local/lib/python3.12/dist-packages/pyrealsense2
 COPY --from=librealsense /usr/src/librealsense/config/99-realsense-libusb.rules /etc/udev/rules.d/
 COPY --from=librealsense /usr/src/librealsense/config/99-realsense-d4xx-mipi-dfu.rules /etc/udev/rules.d/
-ENV PYTHONPATH=$PYTHONPATH:/usr/local/lib
+# Do not use $PYTHONPATH here — it is unset at first ENV parse (BuildKit UndefinedVar warning).
+ENV PYTHONPATH=/usr/local/lib
 
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive
@@ -52,10 +53,10 @@ RUN mkdir -p ${COLCON_WS}/src && \
 
 RUN cd ${COLCON_WS} && \
     apt-get update && \
-    apt-get upgrade -y && \
     apt-get install -y ros-${ROS_DISTRO}-rmw-zenoh-cpp && \
     rosdep update && \
     rosdep install -i --from-path src --rosdistro $ROS_DISTRO --skip-keys="librealsense2" -y && \
+    apt-get upgrade -y && \
     rm -rf /var/lib/apt/lists/*
 
 RUN bash -c "source /opt/ros/${ROS_DISTRO}/setup.bash && \
