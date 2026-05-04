@@ -5,7 +5,7 @@ Changelog for package ffw
 1.3.2 (2026-05-04)
 ------------------
 * Improved 3-wheel swerve steering limit using flip logic
-* Extended neck downward angle by 12 degrees
+* Extended neck downward angle by 10 degrees
 * Contributors: Sungho Woo
 
 1.2.2 (2026-04-27)
