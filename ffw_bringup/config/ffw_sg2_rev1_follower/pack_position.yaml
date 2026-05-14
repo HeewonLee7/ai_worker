@@ -45,7 +45,7 @@
         - head_joint1
         - head_joint2
       step_names: [step0]
-      step0: [0.0]
+      step0: [0.0, 0.0]
       duration: 5.0
       position_tolerance: 0.1
       velocity_tolerance: 0.01
