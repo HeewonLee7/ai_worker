@@ -149,8 +149,6 @@ def generate_launch_description():
             'lift_controller',
             'hand_l_controller',
             'hand_r_controller',
-            'effort_l_controller',
-            'effort_r_controller',
             'swerve_drive_controller',
         ],
         parameters=[robot_description],
