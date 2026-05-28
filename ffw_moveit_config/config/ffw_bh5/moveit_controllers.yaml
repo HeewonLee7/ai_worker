@@ -1,0 +1,91 @@
+# MoveIt controller mapping for SH5 head, lift, arms, and hands.
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+moveit_simple_controller_manager:
+  controller_names:
+  - arm_l_controller
+  - arm_r_controller
+  - head_controller
+  - lift_controller
+  - hand_l_controller
+  - hand_r_controller
+  arm_l_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    joints:
+    - arm_l_joint1
+    - arm_l_joint2
+    - arm_l_joint3
+    - arm_l_joint4
+    - arm_l_joint5
+    - arm_l_joint6
+    - arm_l_joint7
+  arm_r_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    joints:
+    - arm_r_joint1
+    - arm_r_joint2
+    - arm_r_joint3
+    - arm_r_joint4
+    - arm_r_joint5
+    - arm_r_joint6
+    - arm_r_joint7
+  head_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    joints:
+    - head_joint1
+    - head_joint2
+  lift_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    joints:
+    - lift_joint
+  hand_l_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    joints:
+    - finger_l_joint1
+    - finger_l_joint2
+    - finger_l_joint3
+    - finger_l_joint4
+    - finger_l_joint5
+    - finger_l_joint6
+    - finger_l_joint7
+    - finger_l_joint8
+    - finger_l_joint9
+    - finger_l_joint10
+    - finger_l_joint11
+    - finger_l_joint12
+    - finger_l_joint13
+    - finger_l_joint14
+    - finger_l_joint15
+    - finger_l_joint16
+    - finger_l_joint17
+    - finger_l_joint18
+    - finger_l_joint19
+    - finger_l_joint20
+  hand_r_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    joints:
+    - finger_r_joint1
+    - finger_r_joint2
+    - finger_r_joint3
+    - finger_r_joint4
+    - finger_r_joint5
+    - finger_r_joint6
+    - finger_r_joint7
+    - finger_r_joint8
+    - finger_r_joint9
+    - finger_r_joint10
+    - finger_r_joint11
+    - finger_r_joint12
+    - finger_r_joint13
+    - finger_r_joint14
+    - finger_r_joint15
+    - finger_r_joint16
+    - finger_r_joint17
+    - finger_r_joint18
+    - finger_r_joint19
+    - finger_r_joint20

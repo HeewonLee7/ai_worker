@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot name="ffw_bh5_follower">
+    <group name="arm_l">
+        <joint name="arm_l_joint1" />
+        <joint name="arm_l_joint2" />
+        <joint name="arm_l_joint3" />
+        <joint name="arm_l_joint4" />
+        <joint name="arm_l_joint5" />
+        <joint name="arm_l_joint6" />
+        <joint name="arm_l_joint7" />
+    </group>
+    <group name="arm_r">
+        <joint name="arm_r_joint1" />
+        <joint name="arm_r_joint2" />
+        <joint name="arm_r_joint3" />
+        <joint name="arm_r_joint4" />
+        <joint name="arm_r_joint5" />
+        <joint name="arm_r_joint6" />
+        <joint name="arm_r_joint7" />
+    </group>
+    <group name="head">
+        <joint name="head_joint1" />
+        <joint name="head_joint2" />
+    </group>
+    <group name="lift">
+        <joint name="lift_joint" />
+    </group>
+    <group name="hand_l">
+        <joint name="finger_l_joint1" />
+        <joint name="finger_l_joint2" />
+        <joint name="finger_l_joint3" />
+        <joint name="finger_l_joint4" />
+        <joint name="finger_l_joint5" />
+        <joint name="finger_l_joint6" />
+        <joint name="finger_l_joint7" />
+        <joint name="finger_l_joint8" />
+        <joint name="finger_l_joint9" />
+        <joint name="finger_l_joint10" />
+        <joint name="finger_l_joint11" />
+        <joint name="finger_l_joint12" />
+        <joint name="finger_l_joint13" />
+        <joint name="finger_l_joint14" />
+        <joint name="finger_l_joint15" />
+        <joint name="finger_l_joint16" />
+        <joint name="finger_l_joint17" />
+        <joint name="finger_l_joint18" />
+        <joint name="finger_l_joint19" />
+        <joint name="finger_l_joint20" />
+    </group>
+    <group name="hand_r">
+        <joint name="finger_r_joint1" />
+        <joint name="finger_r_joint2" />
+        <joint name="finger_r_joint3" />
+        <joint name="finger_r_joint4" />
+        <joint name="finger_r_joint5" />
+        <joint name="finger_r_joint6" />
+        <joint name="finger_r_joint7" />
+        <joint name="finger_r_joint8" />
+        <joint name="finger_r_joint9" />
+        <joint name="finger_r_joint10" />
+        <joint name="finger_r_joint11" />
+        <joint name="finger_r_joint12" />
+        <joint name="finger_r_joint13" />
+        <joint name="finger_r_joint14" />
+        <joint name="finger_r_joint15" />
+        <joint name="finger_r_joint16" />
+        <joint name="finger_r_joint17" />
+        <joint name="finger_r_joint18" />
+        <joint name="finger_r_joint19" />
+        <joint name="finger_r_joint20" />
+    </group>
+    <group name="arms">
+        <subgroup name="arm_l" />
+        <subgroup name="arm_r" />
+    </group>
+    <group name="hands">
+        <subgroup name="hand_l" />
+        <subgroup name="hand_r" />
+    </group>
+    <group name="arm_l_with_hand_l">
+        <subgroup name="arm_l" />
+        <subgroup name="hand_l" />
+    </group>
+    <group name="arm_r_with_hand_r">
+        <subgroup name="arm_r" />
+        <subgroup name="hand_r" />
+    </group>
+    <group name="upper_body">
+        <subgroup name="head" />
+        <subgroup name="lift" />
+        <subgroup name="arm_l" />
+        <subgroup name="arm_r" />
+        <subgroup name="hand_l" />
+        <subgroup name="hand_r" />
+    </group>
+    <group_state name="init" group="arm_l">
+        <joint name="arm_l_joint1" value="0" />
+        <joint name="arm_l_joint2" value="0" />
+        <joint name="arm_l_joint3" value="0" />
+        <joint name="arm_l_joint4" value="0" />
+        <joint name="arm_l_joint5" value="0" />
+        <joint name="arm_l_joint6" value="0" />
+        <joint name="arm_l_joint7" value="0" />
+    </group_state>
+    <group_state name="init" group="arm_r">
+        <joint name="arm_r_joint1" value="0" />
+        <joint name="arm_r_joint2" value="0" />
+        <joint name="arm_r_joint3" value="0" />
+        <joint name="arm_r_joint4" value="0" />
+        <joint name="arm_r_joint5" value="0" />
+        <joint name="arm_r_joint6" value="0" />
+        <joint name="arm_r_joint7" value="0" />
+    </group_state>
+    <group_state name="init" group="head">
+        <joint name="head_joint1" value="0" />
+        <joint name="head_joint2" value="0" />
+    </group_state>
+    <group_state name="init" group="lift">
+        <joint name="lift_joint" value="0" />
+    </group_state>
+    <group_state name="init" group="hand_l">
+        <joint name="finger_l_joint1" value="0" />
+        <joint name="finger_l_joint2" value="0" />
+        <joint name="finger_l_joint3" value="0" />
+        <joint name="finger_l_joint4" value="0" />
+        <joint name="finger_l_joint5" value="0" />
+        <joint name="finger_l_joint6" value="0" />
+        <joint name="finger_l_joint7" value="0" />
+        <joint name="finger_l_joint8" value="0" />
+        <joint name="finger_l_joint9" value="0" />
+        <joint name="finger_l_joint10" value="0" />
+        <joint name="finger_l_joint11" value="0" />
+        <joint name="finger_l_joint12" value="0" />
+        <joint name="finger_l_joint13" value="0" />
+        <joint name="finger_l_joint14" value="0" />
+        <joint name="finger_l_joint15" value="0" />
+        <joint name="finger_l_joint16" value="0" />
+        <joint name="finger_l_joint17" value="0" />
+        <joint name="finger_l_joint18" value="0" />
+        <joint name="finger_l_joint19" value="0" />
+        <joint name="finger_l_joint20" value="0" />
+    </group_state>
+    <group_state name="init" group="hand_r">
+        <joint name="finger_r_joint1" value="0" />
+        <joint name="finger_r_joint2" value="0" />
+        <joint name="finger_r_joint3" value="0" />
+        <joint name="finger_r_joint4" value="0" />
+        <joint name="finger_r_joint5" value="0" />
+        <joint name="finger_r_joint6" value="0" />
+        <joint name="finger_r_joint7" value="0" />
+        <joint name="finger_r_joint8" value="0" />
+        <joint name="finger_r_joint9" value="0" />
+        <joint name="finger_r_joint10" value="0" />
+        <joint name="finger_r_joint11" value="0" />
+        <joint name="finger_r_joint12" value="0" />
+        <joint name="finger_r_joint13" value="0" />
+        <joint name="finger_r_joint14" value="0" />
+        <joint name="finger_r_joint15" value="0" />
+        <joint name="finger_r_joint16" value="0" />
+        <joint name="finger_r_joint17" value="0" />
+        <joint name="finger_r_joint18" value="0" />
+        <joint name="finger_r_joint19" value="0" />
+        <joint name="finger_r_joint20" value="0" />
+    </group_state>
+    <group_state name="init" group="upper_body">
+        <joint name="head_joint1" value="0" />
+        <joint name="head_joint2" value="0" />
+        <joint name="lift_joint" value="0" />
+        <joint name="arm_l_joint1" value="0" />
+        <joint name="arm_l_joint2" value="0" />
+        <joint name="arm_l_joint3" value="0" />
+        <joint name="arm_l_joint4" value="0" />
+        <joint name="arm_l_joint5" value="0" />
+        <joint name="arm_l_joint6" value="0" />
+        <joint name="arm_l_joint7" value="0" />
+        <joint name="arm_r_joint1" value="0" />
+        <joint name="arm_r_joint2" value="0" />
+        <joint name="arm_r_joint3" value="0" />
+        <joint name="arm_r_joint4" value="0" />
+        <joint name="arm_r_joint5" value="0" />
+        <joint name="arm_r_joint6" value="0" />
+        <joint name="arm_r_joint7" value="0" />
+        <joint name="finger_l_joint1" value="0" />
+        <joint name="finger_l_joint2" value="0" />
+        <joint name="finger_l_joint3" value="0" />
+        <joint name="finger_l_joint4" value="0" />
+        <joint name="finger_l_joint5" value="0" />
+        <joint name="finger_l_joint6" value="0" />
+        <joint name="finger_l_joint7" value="0" />
+        <joint name="finger_l_joint8" value="0" />
+        <joint name="finger_l_joint9" value="0" />
+        <joint name="finger_l_joint10" value="0" />
+        <joint name="finger_l_joint11" value="0" />
+        <joint name="finger_l_joint12" value="0" />
+        <joint name="finger_l_joint13" value="0" />
+        <joint name="finger_l_joint14" value="0" />
+        <joint name="finger_l_joint15" value="0" />
+        <joint name="finger_l_joint16" value="0" />
+        <joint name="finger_l_joint17" value="0" />
+        <joint name="finger_l_joint18" value="0" />
+        <joint name="finger_l_joint19" value="0" />
+        <joint name="finger_l_joint20" value="0" />
+        <joint name="finger_r_joint1" value="0" />
+        <joint name="finger_r_joint2" value="0" />
+        <joint name="finger_r_joint3" value="0" />
+        <joint name="finger_r_joint4" value="0" />
+        <joint name="finger_r_joint5" value="0" />
+        <joint name="finger_r_joint6" value="0" />
+        <joint name="finger_r_joint7" value="0" />
+        <joint name="finger_r_joint8" value="0" />
+        <joint name="finger_r_joint9" value="0" />
+        <joint name="finger_r_joint10" value="0" />
+        <joint name="finger_r_joint11" value="0" />
+        <joint name="finger_r_joint12" value="0" />
+        <joint name="finger_r_joint13" value="0" />
+        <joint name="finger_r_joint14" value="0" />
+        <joint name="finger_r_joint15" value="0" />
+        <joint name="finger_r_joint16" value="0" />
+        <joint name="finger_r_joint17" value="0" />
+        <joint name="finger_r_joint18" value="0" />
+        <joint name="finger_r_joint19" value="0" />
+        <joint name="finger_r_joint20" value="0" />
+    </group_state>
+    <disable_collisions link1="arm_base_link" link2="arm_l_link1" reason="Adjacent" />
+    <disable_collisions link1="arm_base_link" link2="arm_l_link2" reason="Never" />
+    <disable_collisions link1="arm_base_link" link2="arm_l_link3" reason="Never" />
+    <disable_collisions link1="arm_base_link" link2="arm_r_link1" reason="Adjacent" />
+    <disable_collisions link1="arm_base_link" link2="arm_r_link2" reason="Never" />
+    <disable_collisions link1="arm_base_link" link2="arm_r_link3" reason="Never" />
+    <disable_collisions link1="arm_base_link" link2="base_link" reason="Adjacent" />
+    <disable_collisions link1="arm_base_link" link2="head_link1" reason="Adjacent" />
+    <disable_collisions link1="arm_base_link" link2="zedm_camera_center" reason="Never" />
+    <disable_collisions link1="arm_l_link1" link2="arm_l_link2" reason="Adjacent" />
+    <disable_collisions link1="arm_l_link1" link2="arm_l_link3" reason="Never" />
+    <disable_collisions link1="arm_l_link1" link2="arm_l_link4" reason="Never" />
+    <disable_collisions link1="arm_l_link1" link2="arm_l_link5" reason="Never" />
+    <disable_collisions link1="arm_l_link1" link2="arm_r_link1" reason="Never" />
+    <disable_collisions link1="arm_l_link1" link2="arm_r_link2" reason="Never" />
+    <disable_collisions link1="arm_l_link1" link2="arm_r_link3" reason="Never" />
+    <disable_collisions link1="arm_l_link1" link2="arm_r_link4" reason="Never" />
+    <disable_collisions link1="arm_l_link1" link2="arm_r_link5" reason="Never" />
+    <disable_collisions link1="arm_l_link1" link2="arm_r_link6" reason="Never" />
+    <disable_collisions link1="arm_l_link1" link2="arm_r_link7" reason="Never" />
+    <disable_collisions link1="arm_l_link1" link2="base_link" reason="Never" />
+    <disable_collisions link1="arm_l_link1" link2="head_link1" reason="Never" />
+    <disable_collisions link1="arm_l_link1" link2="head_link2" reason="Never" />
+    <disable_collisions link1="arm_l_link1" link2="zedm_camera_center" reason="Never" />
+    <disable_collisions link1="arm_l_link2" link2="arm_l_link3" reason="Adjacent" />
+    <disable_collisions link1="arm_l_link2" link2="arm_l_link4" reason="Never" />
+    <disable_collisions link1="arm_l_link2" link2="arm_r_link1" reason="Never" />
+    <disable_collisions link1="arm_l_link2" link2="arm_r_link2" reason="Never" />
+    <disable_collisions link1="arm_l_link2" link2="arm_r_link3" reason="Never" />
+    <disable_collisions link1="arm_l_link2" link2="arm_r_link4" reason="Never" />
+    <disable_collisions link1="arm_l_link2" link2="arm_r_link5" reason="Never" />
+    <disable_collisions link1="arm_l_link2" link2="arm_r_link6" reason="Never" />
+    <disable_collisions link1="arm_l_link2" link2="arm_r_link7" reason="Never" />
+    <disable_collisions link1="arm_l_link2" link2="base_link" reason="Never" />
+    <disable_collisions link1="arm_l_link2" link2="head_link1" reason="Never" />
+    <disable_collisions link1="arm_l_link2" link2="head_link2" reason="Never" />
+    <disable_collisions link1="arm_l_link2" link2="zedm_camera_center" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="arm_l_link4" reason="Adjacent" />
+    <disable_collisions link1="arm_l_link3" link2="arm_l_link5" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="arm_l_link6" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="arm_l_link7" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="arm_r_link1" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="arm_r_link2" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="arm_r_link3" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="arm_r_link4" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="arm_r_link5" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="arm_r_link6" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="arm_r_link7" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="base_link" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="head_link1" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="head_link2" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="zedm_camera_center" reason="Never" />
+    <disable_collisions link1="arm_l_link4" link2="arm_l_link5" reason="Adjacent" />
+    <disable_collisions link1="arm_l_link4" link2="arm_l_link6" reason="Never" />
+    <disable_collisions link1="arm_l_link4" link2="arm_l_link7" reason="Never" />
+    <disable_collisions link1="arm_l_link4" link2="arm_r_link1" reason="Never" />
+    <disable_collisions link1="arm_l_link4" link2="arm_r_link2" reason="Never" />
+    <disable_collisions link1="arm_l_link4" link2="arm_r_link3" reason="Never" />
+    <disable_collisions link1="arm_l_link4" link2="arm_r_link4" reason="Never" />
+    <disable_collisions link1="arm_l_link4" link2="arm_r_link5" reason="Never" />
+    <disable_collisions link1="arm_l_link4" link2="arm_r_link6" reason="Never" />
+    <disable_collisions link1="arm_l_link4" link2="head_link1" reason="Never" />
+    <disable_collisions link1="arm_l_link5" link2="arm_l_link6" reason="Adjacent" />
+    <disable_collisions link1="arm_l_link5" link2="arm_l_link7" reason="Never" />
+    <disable_collisions link1="arm_l_link5" link2="arm_r_link1" reason="Never" />
+    <disable_collisions link1="arm_l_link5" link2="arm_r_link2" reason="Never" />
+    <disable_collisions link1="arm_l_link5" link2="arm_r_link3" reason="Never" />
+    <disable_collisions link1="arm_l_link5" link2="arm_r_link4" reason="Never" />
+    <disable_collisions link1="arm_l_link6" link2="arm_l_link7" reason="Adjacent" />
+    <disable_collisions link1="arm_l_link6" link2="arm_r_link1" reason="Never" />
+    <disable_collisions link1="arm_l_link6" link2="arm_r_link2" reason="Never" />
+    <disable_collisions link1="arm_l_link6" link2="arm_r_link3" reason="Never" />
+    <disable_collisions link1="arm_l_link7" link2="arm_r_link2" reason="Never" />
+    <disable_collisions link1="arm_l_link7" link2="arm_r_link3" reason="Never" />
+    <disable_collisions link1="arm_r_link1" link2="arm_r_link2" reason="Adjacent" />
+    <disable_collisions link1="arm_r_link1" link2="arm_r_link3" reason="Never" />
+    <disable_collisions link1="arm_r_link1" link2="arm_r_link4" reason="Never" />
+    <disable_collisions link1="arm_r_link1" link2="base_link" reason="Never" />
+    <disable_collisions link1="arm_r_link1" link2="head_link1" reason="Never" />
+    <disable_collisions link1="arm_r_link1" link2="head_link2" reason="Never" />
+    <disable_collisions link1="arm_r_link1" link2="zedm_camera_center" reason="Never" />
+    <disable_collisions link1="arm_r_link2" link2="arm_r_link3" reason="Adjacent" />
+    <disable_collisions link1="arm_r_link2" link2="arm_r_link4" reason="Never" />
+    <disable_collisions link1="arm_r_link2" link2="base_link" reason="Never" />
+    <disable_collisions link1="arm_r_link2" link2="head_link1" reason="Never" />
+    <disable_collisions link1="arm_r_link2" link2="head_link2" reason="Never" />
+    <disable_collisions link1="arm_r_link2" link2="zedm_camera_center" reason="Never" />
+    <disable_collisions link1="arm_r_link3" link2="arm_r_link4" reason="Adjacent" />
+    <disable_collisions link1="arm_r_link3" link2="arm_r_link5" reason="Never" />
+    <disable_collisions link1="arm_r_link3" link2="arm_r_link6" reason="Never" />
+    <disable_collisions link1="arm_r_link3" link2="arm_r_link7" reason="Never" />
+    <disable_collisions link1="arm_r_link3" link2="base_link" reason="Never" />
+    <disable_collisions link1="arm_r_link3" link2="head_link1" reason="Never" />
+    <disable_collisions link1="arm_r_link3" link2="head_link2" reason="Never" />
+    <disable_collisions link1="arm_r_link3" link2="zedm_camera_center" reason="Never" />
+    <disable_collisions link1="arm_r_link4" link2="arm_r_link5" reason="Adjacent" />
+    <disable_collisions link1="arm_r_link4" link2="arm_r_link6" reason="Never" />
+    <disable_collisions link1="arm_r_link4" link2="arm_r_link7" reason="Never" />
+    <disable_collisions link1="arm_r_link4" link2="head_link1" reason="Never" />
+    <disable_collisions link1="arm_r_link5" link2="arm_r_link6" reason="Adjacent" />
+    <disable_collisions link1="arm_r_link5" link2="arm_r_link7" reason="Never" />
+    <disable_collisions link1="arm_r_link6" link2="arm_r_link7" reason="Adjacent" />
+    <disable_collisions link1="base_link" link2="head_link1" reason="Never" />
+    <disable_collisions link1="base_link" link2="head_link2" reason="Never" />
+    <disable_collisions link1="base_link" link2="zedm_camera_center" reason="Never" />
+    <disable_collisions link1="head_link1" link2="head_link2" reason="Adjacent" />
+    <disable_collisions link1="head_link1" link2="zedm_camera_center" reason="Never" />
+    <disable_collisions link1="head_link2" link2="zedm_camera_center" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link10" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link11" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link13" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link14" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link15" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link16" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link17" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link18" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link19" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link2" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link20" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link3" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link4" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link5" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link6" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link7" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="finger_l_link9" reason="Never" />
+    <disable_collisions link1="finger_l_link1" link2="hx5_d20_left_base" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link10" link2="finger_l_link11" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link10" link2="finger_l_link12" reason="Never" />
+    <disable_collisions link1="finger_l_link10" link2="finger_l_link17" reason="Never" />
+    <disable_collisions link1="finger_l_link10" link2="finger_l_link2" reason="Never" />
+    <disable_collisions link1="finger_l_link10" link2="finger_l_link9" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link11" link2="finger_l_link12" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link11" link2="finger_l_link13" reason="Never" />
+    <disable_collisions link1="finger_l_link11" link2="finger_l_link17" reason="Never" />
+    <disable_collisions link1="finger_l_link11" link2="finger_l_link5" reason="Never" />
+    <disable_collisions link1="finger_l_link11" link2="finger_l_link9" reason="Never" />
+    <disable_collisions link1="finger_l_link11" link2="hx5_d20_left_base" reason="Never" />
+    <disable_collisions link1="finger_l_link12" link2="finger_l_link13" reason="Never" />
+    <disable_collisions link1="finger_l_link12" link2="finger_l_link17" reason="Never" />
+    <disable_collisions link1="finger_l_link12" link2="finger_l_link18" reason="Never" />
+    <disable_collisions link1="finger_l_link12" link2="finger_l_link5" reason="Never" />
+    <disable_collisions link1="finger_l_link13" link2="finger_l_link14" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link13" link2="finger_l_link15" reason="Never" />
+    <disable_collisions link1="finger_l_link13" link2="finger_l_link2" reason="Never" />
+    <disable_collisions link1="finger_l_link13" link2="finger_l_link20" reason="Never" />
+    <disable_collisions link1="finger_l_link13" link2="finger_l_link3" reason="Never" />
+    <disable_collisions link1="finger_l_link13" link2="finger_l_link5" reason="Never" />
+    <disable_collisions link1="finger_l_link13" link2="finger_l_link7" reason="Never" />
+    <disable_collisions link1="finger_l_link13" link2="finger_l_link8" reason="Never" />
+    <disable_collisions link1="finger_l_link13" link2="hx5_d20_left_base" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link14" link2="finger_l_link15" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link14" link2="finger_l_link16" reason="Never" />
+    <disable_collisions link1="finger_l_link14" link2="finger_l_link2" reason="Never" />
+    <disable_collisions link1="finger_l_link14" link2="finger_l_link5" reason="Never" />
+    <disable_collisions link1="finger_l_link15" link2="finger_l_link16" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link15" link2="finger_l_link17" reason="Never" />
+    <disable_collisions link1="finger_l_link15" link2="finger_l_link2" reason="Never" />
+    <disable_collisions link1="finger_l_link15" link2="finger_l_link5" reason="Never" />
+    <disable_collisions link1="finger_l_link15" link2="finger_l_link9" reason="Never" />
+    <disable_collisions link1="finger_l_link15" link2="hx5_d20_left_base" reason="Never" />
+    <disable_collisions link1="finger_l_link16" link2="finger_l_link5" reason="Never" />
+    <disable_collisions link1="finger_l_link16" link2="finger_l_link9" reason="Never" />
+    <disable_collisions link1="finger_l_link17" link2="finger_l_link18" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link17" link2="finger_l_link19" reason="Never" />
+    <disable_collisions link1="finger_l_link17" link2="finger_l_link2" reason="Never" />
+    <disable_collisions link1="finger_l_link17" link2="finger_l_link3" reason="Never" />
+    <disable_collisions link1="finger_l_link17" link2="finger_l_link5" reason="Never" />
+    <disable_collisions link1="finger_l_link17" link2="finger_l_link6" reason="Never" />
+    <disable_collisions link1="finger_l_link17" link2="finger_l_link7" reason="Never" />
+    <disable_collisions link1="finger_l_link17" link2="finger_l_link8" reason="Never" />
+    <disable_collisions link1="finger_l_link17" link2="finger_l_link9" reason="Never" />
+    <disable_collisions link1="finger_l_link17" link2="hx5_d20_left_base" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link18" link2="finger_l_link19" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link18" link2="finger_l_link2" reason="Never" />
+    <disable_collisions link1="finger_l_link18" link2="finger_l_link20" reason="Never" />
+    <disable_collisions link1="finger_l_link18" link2="finger_l_link3" reason="Never" />
+    <disable_collisions link1="finger_l_link18" link2="finger_l_link5" reason="Never" />
+    <disable_collisions link1="finger_l_link18" link2="finger_l_link7" reason="Never" />
+    <disable_collisions link1="finger_l_link18" link2="finger_l_link8" reason="Never" />
+    <disable_collisions link1="finger_l_link18" link2="hx5_d20_left_base" reason="Default" />
+    <disable_collisions link1="finger_l_link19" link2="finger_l_link2" reason="Never" />
+    <disable_collisions link1="finger_l_link19" link2="finger_l_link20" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link19" link2="finger_l_link5" reason="Never" />
+    <disable_collisions link1="finger_l_link19" link2="hx5_d20_left_base" reason="Never" />
+    <disable_collisions link1="finger_l_link2" link2="finger_l_link20" reason="Never" />
+    <disable_collisions link1="finger_l_link2" link2="finger_l_link3" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link2" link2="finger_l_link4" reason="Never" />
+    <disable_collisions link1="finger_l_link2" link2="finger_l_link5" reason="Never" />
+    <disable_collisions link1="finger_l_link2" link2="finger_l_link6" reason="Never" />
+    <disable_collisions link1="finger_l_link2" link2="finger_l_link9" reason="Never" />
+    <disable_collisions link1="finger_l_link20" link2="finger_l_link5" reason="Never" />
+    <disable_collisions link1="finger_l_link20" link2="finger_l_link9" reason="Never" />
+    <disable_collisions link1="finger_l_link3" link2="finger_l_link4" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link5" link2="finger_l_link6" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link5" link2="finger_l_link7" reason="Never" />
+    <disable_collisions link1="finger_l_link5" link2="hx5_d20_left_base" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link6" link2="finger_l_link7" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link6" link2="finger_l_link8" reason="Never" />
+    <disable_collisions link1="finger_l_link7" link2="finger_l_link8" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link7" link2="hx5_d20_left_base" reason="Never" />
+    <disable_collisions link1="finger_l_link8" link2="finger_l_link9" reason="Never" />
+    <disable_collisions link1="finger_l_link9" link2="hx5_d20_left_base" reason="Adjacent" />
+    <disable_collisions link1="finger_l_link2" link2="hx5_d20_left_base" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link10" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link11" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link13" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link14" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link15" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link16" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link17" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link18" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link19" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link2" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link20" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link3" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link4" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link5" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link6" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link7" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="finger_r_link9" reason="Never" />
+    <disable_collisions link1="finger_r_link1" link2="hx5_d20_right_base" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link10" link2="finger_r_link11" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link10" link2="finger_r_link12" reason="Never" />
+    <disable_collisions link1="finger_r_link10" link2="finger_r_link17" reason="Never" />
+    <disable_collisions link1="finger_r_link10" link2="finger_r_link2" reason="Never" />
+    <disable_collisions link1="finger_r_link10" link2="finger_r_link9" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link11" link2="finger_r_link12" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link11" link2="finger_r_link13" reason="Never" />
+    <disable_collisions link1="finger_r_link11" link2="finger_r_link17" reason="Never" />
+    <disable_collisions link1="finger_r_link11" link2="finger_r_link5" reason="Never" />
+    <disable_collisions link1="finger_r_link11" link2="finger_r_link9" reason="Never" />
+    <disable_collisions link1="finger_r_link11" link2="hx5_d20_right_base" reason="Never" />
+    <disable_collisions link1="finger_r_link12" link2="finger_r_link13" reason="Never" />
+    <disable_collisions link1="finger_r_link12" link2="finger_r_link17" reason="Never" />
+    <disable_collisions link1="finger_r_link12" link2="finger_r_link18" reason="Never" />
+    <disable_collisions link1="finger_r_link12" link2="finger_r_link5" reason="Never" />
+    <disable_collisions link1="finger_r_link13" link2="finger_r_link14" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link13" link2="finger_r_link15" reason="Never" />
+    <disable_collisions link1="finger_r_link13" link2="finger_r_link2" reason="Never" />
+    <disable_collisions link1="finger_r_link13" link2="finger_r_link20" reason="Never" />
+    <disable_collisions link1="finger_r_link13" link2="finger_r_link3" reason="Never" />
+    <disable_collisions link1="finger_r_link13" link2="finger_r_link5" reason="Never" />
+    <disable_collisions link1="finger_r_link13" link2="finger_r_link7" reason="Never" />
+    <disable_collisions link1="finger_r_link13" link2="finger_r_link8" reason="Never" />
+    <disable_collisions link1="finger_r_link13" link2="hx5_d20_right_base" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link14" link2="finger_r_link15" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link14" link2="finger_r_link16" reason="Never" />
+    <disable_collisions link1="finger_r_link14" link2="finger_r_link2" reason="Never" />
+    <disable_collisions link1="finger_r_link14" link2="finger_r_link5" reason="Never" />
+    <disable_collisions link1="finger_r_link15" link2="finger_r_link16" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link15" link2="finger_r_link17" reason="Never" />
+    <disable_collisions link1="finger_r_link15" link2="finger_r_link2" reason="Never" />
+    <disable_collisions link1="finger_r_link15" link2="finger_r_link5" reason="Never" />
+    <disable_collisions link1="finger_r_link15" link2="finger_r_link9" reason="Never" />
+    <disable_collisions link1="finger_r_link15" link2="hx5_d20_right_base" reason="Never" />
+    <disable_collisions link1="finger_r_link16" link2="finger_r_link5" reason="Never" />
+    <disable_collisions link1="finger_r_link16" link2="finger_r_link9" reason="Never" />
+    <disable_collisions link1="finger_r_link17" link2="finger_r_link18" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link17" link2="finger_r_link19" reason="Never" />
+    <disable_collisions link1="finger_r_link17" link2="finger_r_link2" reason="Never" />
+    <disable_collisions link1="finger_r_link17" link2="finger_r_link3" reason="Never" />
+    <disable_collisions link1="finger_r_link17" link2="finger_r_link5" reason="Never" />
+    <disable_collisions link1="finger_r_link17" link2="finger_r_link6" reason="Never" />
+    <disable_collisions link1="finger_r_link17" link2="finger_r_link7" reason="Never" />
+    <disable_collisions link1="finger_r_link17" link2="finger_r_link8" reason="Never" />
+    <disable_collisions link1="finger_r_link17" link2="finger_r_link9" reason="Never" />
+    <disable_collisions link1="finger_r_link17" link2="hx5_d20_right_base" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link18" link2="finger_r_link19" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link18" link2="finger_r_link2" reason="Never" />
+    <disable_collisions link1="finger_r_link18" link2="finger_r_link20" reason="Never" />
+    <disable_collisions link1="finger_r_link18" link2="finger_r_link3" reason="Never" />
+    <disable_collisions link1="finger_r_link18" link2="finger_r_link5" reason="Never" />
+    <disable_collisions link1="finger_r_link18" link2="finger_r_link7" reason="Never" />
+    <disable_collisions link1="finger_r_link18" link2="finger_r_link8" reason="Never" />
+    <disable_collisions link1="finger_r_link18" link2="hx5_d20_right_base" reason="Default" />
+    <disable_collisions link1="finger_r_link19" link2="finger_r_link2" reason="Never" />
+    <disable_collisions link1="finger_r_link19" link2="finger_r_link20" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link19" link2="finger_r_link5" reason="Never" />
+    <disable_collisions link1="finger_r_link19" link2="hx5_d20_right_base" reason="Never" />
+    <disable_collisions link1="finger_r_link2" link2="finger_r_link20" reason="Never" />
+    <disable_collisions link1="finger_r_link2" link2="finger_r_link3" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link2" link2="finger_r_link4" reason="Never" />
+    <disable_collisions link1="finger_r_link2" link2="finger_r_link5" reason="Never" />
+    <disable_collisions link1="finger_r_link2" link2="finger_r_link6" reason="Never" />
+    <disable_collisions link1="finger_r_link2" link2="finger_r_link9" reason="Never" />
+    <disable_collisions link1="finger_r_link20" link2="finger_r_link5" reason="Never" />
+    <disable_collisions link1="finger_r_link20" link2="finger_r_link9" reason="Never" />
+    <disable_collisions link1="finger_r_link3" link2="finger_r_link4" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link5" link2="finger_r_link6" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link5" link2="finger_r_link7" reason="Never" />
+    <disable_collisions link1="finger_r_link5" link2="hx5_d20_right_base" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link6" link2="finger_r_link7" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link6" link2="finger_r_link8" reason="Never" />
+    <disable_collisions link1="finger_r_link7" link2="finger_r_link8" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link7" link2="hx5_d20_right_base" reason="Never" />
+    <disable_collisions link1="finger_r_link8" link2="finger_r_link9" reason="Never" />
+    <disable_collisions link1="finger_r_link9" link2="hx5_d20_right_base" reason="Adjacent" />
+    <disable_collisions link1="finger_r_link2" link2="hx5_d20_right_base" reason="Never" />
+    <disable_collisions link1="arm_l_link7" link2="hx5_d20_left_base" reason="Adjacent" />
+    <disable_collisions link1="arm_r_link7" link2="hx5_d20_right_base" reason="Adjacent" />
+    <!-- merged from ffw_sh5.srdf (shared upper body) -->
+    <disable_collisions link1="arm_l_link1" link2="camera_r_link" reason="Never" />
+    <disable_collisions link1="arm_l_link2" link2="camera_r_link" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="camera_l_link" reason="Never" />
+    <disable_collisions link1="arm_l_link3" link2="camera_r_link" reason="Never" />
+    <disable_collisions link1="arm_l_link4" link2="camera_l_link" reason="Never" />
+    <disable_collisions link1="arm_l_link5" link2="camera_l_link" reason="Never" />
+    <disable_collisions link1="arm_l_link6" link2="camera_l_link" reason="Never" />
+    <disable_collisions link1="arm_l_link7" link2="camera_l_link" reason="Adjacent" />
+    <disable_collisions link1="arm_r_link2" link2="camera_l_link" reason="Never" />
+    <disable_collisions link1="arm_r_link3" link2="camera_l_link" reason="Never" />
+    <disable_collisions link1="arm_r_link3" link2="camera_r_link" reason="Never" />
+    <disable_collisions link1="arm_r_link4" link2="camera_r_link" reason="Never" />
+    <disable_collisions link1="arm_r_link5" link2="camera_r_link" reason="Never" />
+    <disable_collisions link1="arm_r_link6" link2="camera_r_link" reason="Never" />
+    <disable_collisions link1="arm_r_link7" link2="camera_r_link" reason="Adjacent" />
+</robot>

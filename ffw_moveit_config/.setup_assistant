@@ -4,7 +4,7 @@ moveit_setup_assistant_config:
     relative_path: urdf/ffw.urdf.xacro
   srdf:
     package: ffw_moveit_config
-    relative_path: config/ffw.srdf
+    relative_path: config/ffw_common/ffw.srdf
   package_settings:
     author_name: Woojin Wie
     author_email: wwj@robotis.com
